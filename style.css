@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    border: solid 1px black;
+}
+
+#navbarMainContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarMainContent ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#logoPic {
+    width: 1.4475em;
+    height: 1.4475em;
+}
