@@ -56,8 +56,10 @@ body {
 
 /* Header Code */
 #header {
-    width: 100%; 
+    width: 100%;
+    height: 100%; 
     position: relative; 
+    overflow: hidden;
 }
 
 #header img {
@@ -68,13 +70,22 @@ body {
 }
 
 #headerText {
+    position: absolute;
+    width: 90%;
+    top: 35%;
+    left: 5%;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
+.headerP, #headerText h1 {
+    margin: 0.31em 0;
+}
 
-/* Fix code so H1 does not leave its spot on the screen */
+.dateStarted {
+    font-size: 0.75em;
+}
+
 
 /* Media Queries*/
 
@@ -94,5 +105,22 @@ body {
     #logoPic {
         width: 1.9em;
         height: 1.9em;
+    }
+    
+    #headerText {
+        top: 70%;
+        left: 5%; 
+    }
+
+    .dateStarted {
+        font-size: 1.5em;
+    }
+
+    #headerText h1 {
+        font-size: 4em;
+    }
+
+    .headerP{
+        font-size: 2em;
     }
 }
