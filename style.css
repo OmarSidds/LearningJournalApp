@@ -86,8 +86,142 @@ body {
     font-size: 0.75em;
 }
 
+/* Blog Post Content */
+
+#listOfBlogPosts {
+    margin: 2em 1em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "rest"
+        "insta"
+        "champ";
+}
+
+.resturant, .instagram, .champion{
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    background-color: #ededed;
+    border-radius: 2px;
+    /*border: 2px solid red;*/
+}
+
+.resturant {
+    grid-area: "rest";
+}
+
+.instagram {
+    grid-area: "insta";
+}
+
+.champion {
+    grid-area: "champ";
+}
+
+.resturant article img,
+.instagram article img,
+.champion article img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.pTagOne, .pTagTwo, .articleH2Tag{
+    margin: 0.4em 0;
+}
+
+.pTagOne, .pTagTwo {
+    font-weight: 400;
+}
+
+.pTagOne {
+   font-size: 0.875em; 
+}
+
+.articleH2Tag {
+    font-size: 1.5em;
+    color: #141414;
+    font-weight: 700;
+}
+
+.pTagTwo {
+    font-size: 1em; 
+    color: #505050;
+ }
+
+
+
+/* View More button */
+
+.btnDiv {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+#viewMoreBtn {
+    border: none;
+    background-color: white;
+    
+    
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    height: 105px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+}
+
+.footerP1 {
+    color: #ececec;
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+.footerP2 {
+    color: #d7d7d7;
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.footerP1, .footerP2 {
+    margin: 0 0 0.2em 0;
+    padding: 0;
+}
+
+
 
 /* Media Queries*/
+
+@media (min-width: 576px) { 
+    #headerText {
+        top: 45%;
+        left: 5%; 
+    }
+
+    .dateStarted {
+        font-size: 1.2em;
+    }
+
+    #headerText h1 {
+        font-size: 2.5em;
+    }
+
+    .headerP{
+        font-size: 1.5em;
+    }
+ }
 
 @media (min-width: 768px) {
     #navbar {
@@ -108,7 +242,7 @@ body {
     }
     
     #headerText {
-        top: 70%;
+        top: 55%;
         left: 5%; 
     }
 
