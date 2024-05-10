@@ -250,7 +250,7 @@ footer div {
         height: 5em;
     }
 
-    #navbarMainContent ul li{
+    #navbarMainContent ul li a{
         font-size: 1.15rem;
     }
 
@@ -278,5 +278,12 @@ footer div {
 
     .headerP{
         font-size: 2em;
+    }
+
+    #listOfBlogPosts {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "rest insta champ"
+            "unit pass work";
     }
 }
