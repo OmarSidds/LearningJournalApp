@@ -54,6 +54,7 @@ body {
 
 
 /* Header Code */
+
 #header {
     width: 100%;
     height: 100%; 
@@ -148,7 +149,6 @@ body {
     border-radius: 3px;
 }
 
-/* code above this is what needs to be changed */
 
 .pTagOne, .pTagTwo, .articleH2Tag{
     margin: 0.4em 0;
@@ -173,6 +173,22 @@ body {
     color: #505050;
  }
 
+ #headerPageContent h1 {
+    font-size: 2em;
+ }
+
+ #headerPageContent p, 
+ #headerPageContent2 p,
+ .aboutMeIntroDiv div p
+ .headerPageContent2 p {
+    font-weight: 400;
+ }
+
+ #headerPageContent2 h3, 
+ .aboutMeIntroDiv div h1
+ .headerPageContent2 h3 {
+    font-weight: 700;
+ }
 
 
 /* View More button */
@@ -190,6 +206,7 @@ body {
     font-weight: 700;
     text-decoration: underline;
 }
+
 
 /* Footer */
 
@@ -223,6 +240,45 @@ footer div {
 }
 
 
+/* Header Page CSS */
+
+.recentPosts { 
+    display: flex;
+    justify-content: center;
+}
+
+.recentPosts p{ 
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+}
+
+#headerPageContainer {
+    margin: 2em 1em;
+}
+
+#headerPageContainer div img {
+    width: 100%;
+}
+
+
+/* About me picture and information */
+
+#aboutMePageContainer {
+    margin: 2em 3em;
+}
+
+.aboutMePicDiv { 
+    width: 200px;
+    height: 200px;
+}
+
+.aboutMePicDiv img { 
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 
 /* Media Queries*/
 
@@ -233,7 +289,7 @@ footer div {
     }
 
     .dateStarted {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #headerText h1 {
@@ -269,7 +325,7 @@ footer div {
     }
 
     .dateStarted {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     #headerText h1 {
@@ -281,9 +337,30 @@ footer div {
     }
 
     #listOfBlogPosts {
+        margin: 2em 3em;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
             "rest insta champ"
             "unit pass work";
+    }
+
+    #headerPageContent, 
+    #headerPageContent2 {
+        margin: 0 3em;
+    }
+
+    .aboutMeIntroDiv {
+        display: flex;
+        align-items: center;
+    }
+
+    .aboutMePicDiv { 
+        width: 400px;
+        height: 250px;
+        margin-right: 1em;
+    }
+
+    #aboutMePageContent2 {
+        margin: 3em 3em;
     }
 }
